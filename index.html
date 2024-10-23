@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAM</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="icon-container">
+          <img src="datos/bam-icon.svg" alt="BAM Icon" />
+        </div>
+        <div>
+          <p>Bienvenido a Bamvirtual Personas</p>
+        </div>
+        <form>
+          <div class="cuadrado">
+            <div class="icon-input">
+              <i class="icon icon-user"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" style="width: 20px;"></i>
+              <input
+                type="text"
+                id="input-username"
+                class="form-control input-general"
+                autocomplete="off"
+                minlength="1"
+                maxlength="20"
+                placeholder=" "
+              />
+              <label for="input-username">Ingresa tu usuario</label>
+            </div>
+          </div>
+          <div class="button-container">
+            <button id="continue-button1" class="disabled">CONTINUAR</button>
+          </div>
+          <div
+            style="
+              width: 100%;
+              background: #9a9a9a;
+              height: 1px;
+              margin-top: 50px;
+              margin-bottom: 50px;
+            "
+          ></div>
+          <div style="width: 100%; text-align: center">
+            <p style="font-weight: 600; font-size: 17px">
+              ¿Aún no tienes un usuario?
+            </p>
+            <button
+              style="
+                width: 100%;
+                padding: 15px;
+                border: 1px solid black;
+                background: white;
+              "
+            >
+              REGISTRATE AQUI
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <img src="datos/login.gif" alt="Imagen de ejemplo" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
